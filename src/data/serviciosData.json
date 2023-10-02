@@ -3,24 +3,24 @@
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
             "images": [
-                "../assets/Sencilla.jpg",
-                "../assets/Doble.jpg"
+                "Sencilla.jpg",
+                "Doble.jpg"
             ],
             "titulo": "Sencilla"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
             "images": [
-                "../assets/Doble.jpg",
-                "../assets/JrSuite.jpg"
+                "Doble.jpg",
+                "JrSuite.jpg"
             ],
             "titulo": "Doble"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
             "images": [
-                "../assets/JrSuite.jpg",
-                "../assets/Doble.jpg"
+                "JrSuite.jpg",
+                "Doble.jpg"
             ],
             "titulo": "JrSuite"
         }
@@ -28,50 +28,50 @@
     "servicio": [
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
-            "fotosMovil": "../assets/phone/Alberca.jpg",
-            "fotosWeb": "../assets/Alberca.jpg",
+            "fotosMovil": "phone/Alberca.jpg",
+            "fotosWeb": "Alberca.jpg",
             "titulo": "Alberca"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
-            "fotosMovil": "../assets/phone/Gimnasio.jpg",
-            "fotosWeb": "../assets/Gimnasio.jpg",
+            "fotosMovil": "phone/Gimnasio.jpg",
+            "fotosWeb": "Gimnasio.jpg",
             "titulo": "Gimnasio"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
-            "fotosMovil": "../assets/phone/Habitacion.jpg",
-            "fotosWeb": "../assets/Habitacion.jpg",
+            "fotosMovil": "phone/Habitacion.jpg",
+            "fotosWeb": "Habitacion.jpg",
             "titulo": "Habitacion"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
-            "fotosMovil": "../assets/phone/Jardin.jpg",
-            "fotosWeb": "../assets/Jardin.jpg",
+            "fotosMovil": "phone/Jardin.jpg",
+            "fotosWeb": "Jardin.jpg",
             "titulo": "Jardin"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
-            "fotosMovil": "../assets/phone/Restaurante.jpg",
-            "fotosWeb": "../assets/Restaurante.jpg",
+            "fotosMovil": "phone/Restaurante.jpg",
+            "fotosWeb": "Restaurante.jpg",
             "titulo": "Restaurante"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
-            "fotosMovil": "../assets/phone/Salon.jpg",
-            "fotosWeb": "../assets/Salon.jpg",
+            "fotosMovil": "phone/Salon.jpg",
+            "fotosWeb": "Salon.jpg",
             "titulo": "Salon"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
-            "fotosMovil": "../assets/phone/Sauna.jpg",
-            "fotosWeb": "../assets/Sauna.jpg",
+            "fotosMovil": "phone/Sauna.jpg",
+            "fotosWeb": "Sauna.jpg",
             "titulo": "Sauna"
         },
         {
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias suscipit reiciendis accusantium soluta possimus corrupti harum labore aperiam tenetur.",
-            "fotosMovil": "../assets/phone/Temazcal.jpg",
-            "fotosWeb": "../assets/Temazcal.jpg",
+            "fotosMovil": "phone/Temazcal.jpg",
+            "fotosWeb": "Temazcal.jpg",
             "titulo": "Temazcal"
         }
     ]

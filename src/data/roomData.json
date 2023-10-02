@@ -6,16 +6,16 @@
     },
     "imagenes": {
         "doble": [
-            "../assets/Doble.jpg",
-            "../assets/JrSuite.jpg"
+            "Doble.jpg",
+            "JrSuite.jpg"
         ],
         "Jr": [
-            "../assets/JrSuite.jpg",
-            "../assets/Doble.jpg"
+            "JrSuite.jpg",
+            "Doble.jpg"
         ],
         "sencilla": [
-            "../assets/Sencilla.jpg",
-            "../assets/Doble.jpg"
+            "Sencilla.jpg",
+            "Doble.jpg"
         ]
     },
     "seccion": {
