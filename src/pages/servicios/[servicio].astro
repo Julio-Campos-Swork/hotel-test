@@ -1,8 +1,7 @@
 ---
-import Layout from '../../layouts/Layout.astro'
-import ServiciosData from '../../data/serviciosData.json'
-import Servicio from '../../components/Servicios/Servicio.astro'
-import { ViewTransitions } from 'astro:transitions';
+import Layout from '@layouts/Layout.astro'
+import ServiciosData from '@data/serviciosData.json'
+import Servicio from '@components/Servicios/Servicio.astro'
 export async function getStaticPaths() {
   return ServiciosData.servicio.flatMap(({ titulo, descripcion, fotosMovil, fotosWeb }) => {
     return [

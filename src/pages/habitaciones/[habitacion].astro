@@ -1,7 +1,7 @@
 ---
-import Layout from '../../layouts/Layout.astro'
-import ServiciosData from '../../data/serviciosData.json'
-import HabitacionA from '../../components/Habitaciones/HabitacionA.astro'
+import Layout from '@layouts/Layout.astro'
+import ServiciosData from '@data/serviciosData.json'
+import HabitacionA from '@components/Habitaciones/HabitacionA.astro'
 
 export async function getStaticPaths() {
   return ServiciosData.habitaciones.flatMap(({ titulo, descripcion,images}) => {

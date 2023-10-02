@@ -7,7 +7,7 @@ import NavBar from '@layouts/NavBar.astro'
 import Footer from '@layouts/Footer.astro'
 import { ViewTransitions } from 'astro:transitions'
 const { title, descripcion } = Astro.props
-// import "@styles/styles.css"
+import "@styles/styles.css"
 ---
 
 <!doctype html>
@@ -38,7 +38,7 @@ const { title, descripcion } = Astro.props
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <title>{title}</title>
     <ViewTransitions />
   </head>

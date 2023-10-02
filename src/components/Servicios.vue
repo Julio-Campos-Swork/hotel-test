@@ -11,8 +11,8 @@
 </template>
 
 <script setup>
-	import serviciosData from '../data/serviciosData.json'
-	import Carrousel from './Carrousel/Carrousel.vue'
+	import serviciosData from '@data/serviciosData.json'
+	import Carrousel from '@components/Carrousel/Carrousel.vue'
 </script>
 
 <style scoped></style>
