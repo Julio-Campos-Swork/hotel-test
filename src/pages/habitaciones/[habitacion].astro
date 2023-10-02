@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import ServiciosData from '../../data/serviciosData.json'
+import HabitacionA from '../../components/Habitaciones/HabitacionA.astro'
+
+export async function getStaticPaths() {
+  return ServiciosData.habitaciones.flatMap(({ titulo, descripcion,images}) => {
+    return [
+      {
+        params: { habitacion: titulo },
+        props: { descripcion, images },
+      },
+    ]
+  })
+}
+const { habitacion } = Astro.params
+const { descripcion, images } = Astro.props
+const title = habitacion + ' - Servicio proporcionado por el Hotel del Angel'
+---
+
+<Layout
+  title={title}
+  descripcion="Explora nuestros Habitaciones en el Hotel del Ángel: Sencillas, dobles, para personas con movilidad reducida, pet friendly."
+>
+  <section class="secondBGColor" >
+    <HabitacionA  title={habitacion} description={descripcion} images={images} />
+  </section>
+</Layout>

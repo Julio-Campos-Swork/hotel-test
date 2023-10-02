@@ -1,0 +1,222 @@
+---
+import ImagenWebp from '@components/ImagenWebp.astro'
+import Sencilla from '@assets/Sencilla.jpg?url'
+import Doble from '@assets/Doble.jpg?url'
+import Jrsuite from '@assets/Jrsuite.jpg?url'
+import PetFriendlyWebp from "@assets/pet1.webp?url"
+import PetFriendlyPng from "@assets/pet1.png?url"
+import DiscapacitadosWebp from "@assets/discapacitados.webp?url"
+import DiscapacitadosPng from "@assets/discapacitados.png?url"
+import WifiWebp from "@assets/wifi.webp?url"
+import WifiPng from "@assets/wifi.png?url"
+---
+
+<hr class="border-white opacity-70" />
+
+<div class="principalBGColor">
+  <div class="flex justify-center">
+    <p class="text-center uppercase text-white text-4xl py-8 subTitleFont">
+      Nuestras habitaciones
+    </p>
+  </div>
+  <div
+    class="p-4 grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3"
+  >
+    <!-- primera tarjeta -->
+    <div
+      class="box m-4 transition animation-duration-300 ease-in-out hover:scale-105"
+    >
+      <div class="bg-white max-w-sm flex flex-col m-0">
+        <a
+          href="/habitaciones/Sencilla"
+          aria-label="Ver más sobre habitación sencilla"
+        >
+        <ImagenWebp imageWebp='' imageJPG={Sencilla} imageName='Habitacion Sencilla' clase=''  />
+          <!-- <img src="../assets/Sencilla.jpg" alt="Habitacion Sencilla" /> -->
+        </a>
+
+        <div class="p-5">
+          <p
+            class="text-black font-bold text-4xl text-center tracking-tight mb-2"
+          >
+            Sencilla
+          </p>
+          <div class="text-center text-xl my-4">
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+          </div>
+          <div class="flex justify-evenly my-6 text-md">
+            <p class="px-4 text-center">
+              <i class="fa fa-bed"></i><br />Cama Doble
+            </p>
+            <p class="px-4 text-center">
+              <i class="fa fa-bath"></i><br />Baño
+            </p>
+          </div>
+          <div class="text-center my-6">
+            <a href="/habitaciones/Sencilla" class="botonHabitaciones">
+              Información completa
+              <svg
+                class="-mr-1 ml-2 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- segunda tarjeta -->
+    <div
+      class="box m-4 transition animation-duration-300 ease-in-out hover:scale-105"
+    >
+      <div class="bg-white max-w-sm flex flex-col m-0">
+        <a
+          href="/habitaciones/Doble"
+          aria-label="Ver más sobre habitación doble"
+        >
+        <ImagenWebp imageWebp='' imageJPG={Doble} imageName='Habitacion Doble' clase=''  />
+
+          <!-- <img src="../assets/Doble.jpg" alt="Habitacion doble" /> -->
+        </a>
+        <div class="p-5">
+          <p
+            class="text-black font-bold text-4xl text-center tracking-tight mb-2"
+          >
+            Doble
+          </p>
+          <div class="text-center text-xl my-4">
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+          </div>
+
+          <div class="flex justify-evenly my-6 text-md">
+            <p class="px-1 text-center">
+              <i class="fa fa-bed pr-2"></i><i class="fa fa-bed"></i><br />Camas
+              Dobles
+            </p>
+            <p class="px-1 text-center">
+              <i class="fa fa-bath"></i><br />Baño
+            </p>
+          </div>
+          <div class="text-center my-6">
+            <a href="/habitaciones/Doble" class="botonHabitaciones">
+              Información completa
+              <svg
+                class="-mr-1 ml-2 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tercera tarjeta -->
+    <div
+      class="box m-4 transition animation-duration-300 ease-in-out hover:scale-105"
+    >
+      <div class="bg-white max-w-sm flex flex-col m-0">
+        <a
+          href="/habitaciones/JrSuite"
+          aria-label="Ver más sobre habitación Jr Suite"
+        >
+        <ImagenWebp imageWebp='' imageJPG={Jrsuite} imageName='Habitacion Jr Suite' clase=''  />
+        
+          <!-- <img src="../assets/JrSuite.jpg" alt="JrtSuite" /> -->
+        </a>
+        <div class="p-5">
+          <p
+            class="text-black font-bold text-4xl text-center tracking-tight mb-2"
+          >
+            Jr Suite
+          </p>
+          <div class="text-center text-xl my-4">
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+            <i class="fa fa-star text-[#132256]"></i>
+          </div>
+          <div class="flex justify-evenly my-6 text-md">
+            <p class="px-1 text-center">
+              <i class="fa fa-bed"></i><br />Cama Doble
+            </p>
+            <p class="px-1 text-center">
+              <i class="fa fa-couch"></i><br />Sofacama
+            </p>
+            <p class="px-1 text-center">
+              <i class="fa fa-bath"></i><br />Baño
+            </p>
+          </div>
+          <div class="text-center my-6">
+            <a href="/habitaciones/JrSuite" class="botonHabitaciones">
+              Información completa
+              <svg
+                class="-mr-1 ml-2 h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- seccion de servicios  -->
+  <p
+    class="text-center text-xl lg:text-2xl  text-white pt-4 subTitleFont uppercase"
+  >
+    Contamos con los siguientes servicios
+  </p>
+  <div class="flex justify-evenly px-10 py-8">
+    <div class="grid place-items-center">
+      <ImagenWebp
+        imageWebp={PetFriendlyWebp}
+        imageJPG={PetFriendlyPng}
+        imageName="Amigables con tu mascota"
+        clase="md:w-[150px] md:h-[150px] w-[100px] h-[100px]"
+      />
+    </div>
+    <div class="grid place-items-center">
+      <ImagenWebp
+        imageWebp={DiscapacitadosWebp}
+        imageJPG={DiscapacitadosPng}
+        imageName="Área para discapacitados"
+        clase="md:w-[150px] md:h-[150px] w-[100px] h-[100px]"
+      />
+    </div>
+    <div class="grid place-items-center">
+      <ImagenWebp
+        imageWebp={WifiWebp}
+        imageJPG={WifiPng}
+        imageName="Cuartos con WI-FI Gratis"
+        clase="md:w-[150px] md:h-[150px] w-[100px] h-[100px]"
+      />
+    </div>
+  </div>
+</div>
+ 

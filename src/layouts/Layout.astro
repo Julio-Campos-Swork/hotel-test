@@ -1,0 +1,70 @@
+---
+interface Props {
+  title: string
+  descripcion: string
+}
+import NavBar from '@layouts/NavBar.astro'
+import Footer from '@layouts/Footer.astro'
+import { ViewTransitions } from 'astro:transitions'
+const { title, descripcion } = Astro.props
+import "@styles/styles.css"
+import Logo from '@assets/LOGO.ico?url'
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={descripcion} />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:url" content="https://www.hoteldelangel.com.mx" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hotel Del Ángel" />
+    <meta
+      property="og:image"
+      content="https://www.hoteldelangel.com.mx/img/logotipo.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Somos una hacienda en el corazón de la ciudad, con un concepto pensado en tu comodidad y relajación. Vive una experiencia de altura a un solo clic"
+    />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <link rel="icon" href={Logo} />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <main class="max-w-[2000px] mx-auto">
+      <!-- serccion navbar -->
+      <NavBar />
+
+      <!-- "slot" es el contenido procesado de la pagina -->
+      <slot />
+      <!-- inicio del footer presente en toda la pagina -->
+      <Footer />
+
+
+    </main>
+    <script
+      src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
+    ></script>
+	<script
+  async
+  src="https://www.jscache.com/wejs?wtype=rated&uniq=965&locationId=2249543&lang=es_MX&display_version=2"
+  data-loadtrk
+  onload="this.loadtrk=true"></script>
+  </body>
+</html>

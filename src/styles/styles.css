@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #FFF7D6;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+/* * {
+	box-sizing: border-box;
+} */
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+	/* color-scheme: light dark; */
+}
+
+
+
+/* Letras disponibles  */
+@font-face {
+    font-family: "Her Von";
+    src: url('../assets/fuentes/HerrVonMuellerhoff-Regular.ttf');
+}
+@font-face {
+    font-family: "Blacklist";
+    src: url('../assets/fuentes/Blacklist.ttf');
+}
+@font-face {
+    font-family: "Playfair";
+    src: url('../assets/fuentes/PlayfairDisplay-BoldItalic.ttf');
+}
+@font-face {
+    font-family: "Josefin";
+    src: url('../assets/fuentes/JosefinSans-Italic.ttf');
+}
+@font-face {
+    font-family: "Lora";
+    src: url('../assets/fuentes/Lora.ttf');
+}
+.fontTitle{
+  font-family: 'Blacklist', sans-serif;
+
+}
+.principalFont{
+    font-family: "Lora", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.subTitleFont{
+    font-family: "Josefin", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.principalBGColor{
+background-color: #132256 ;
+}
+.secondBGColor{
+background-color: #463976 ;
+
+}
+
+
+
+
+
+/* stylos perzonalizados de tailwind */
+	.botonInfo {
+		@apply text-white text-base md:text-xl bg-[#2557D6] hover:bg-[#2557D6]/90 focus:ring-4 focus:ring-[#2557D6]/50 focus:outline-none font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#2557D6]/50 mr-2 mb-2 hover:scale-110 transition-all duration-300 ease-in-out
+	}
+	.botonHabitaciones{
+		@apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center
+	}
+
+/* .banner tripadvisor */
+.tripAdvisorLg{
+    @apply lg:relative lg:-top-10 lg:right-12 lg:pl-8 lg:m-0 flex lg:z-10 lg:justify-end 
+}
+
+
+
+/* header */
+
+
+
+/* animaciones */
+
+
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+  
+  @property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+  }
+  
+  @property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+  }
+
+  .box {
+	border: 0.25rem solid;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+
+
+
+        /* Estilos para el tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 160px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 20%;
+            left: 250%;
+            margin-left: -70px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+       
+        
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    

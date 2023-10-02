@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import ServiciosData from '../../data/serviciosData.json'
+import Servicio from '../../components/Servicios/Servicio.astro'
+import { ViewTransitions } from 'astro:transitions';
+export async function getStaticPaths() {
+  return ServiciosData.servicio.flatMap(({ titulo, descripcion, fotosMovil, fotosWeb }) => {
+    return [
+      {
+        params: { servicio: titulo },
+        props: { descripcion, fotosMovil },
+      },
+    ]
+  })
+}
+const { servicio } = Astro.params
+const { descripcion, fotosMovil, fotosWeb } = Astro.props
+const title = servicio + ' - Servicio proporcionado por el Hotel del Angel'
+---
+
+<Layout
+title={title}
+descripcion="Explora nuestros servicios de lujo en Hotel del Ángel: Alberca, GYM, Restaurante, Salón, Temazcal y Jardín."
+>
+  <section class="secondBGColor">
+    <Servicio transition:persist title={servicio} description={descripcion} images={[fotosMovil, fotosWeb]} />
+  </section>
+</Layout>

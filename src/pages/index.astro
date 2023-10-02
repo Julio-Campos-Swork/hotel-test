@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/Hero.astro'
+import Habitaciones from '../components/Habitaciones.astro'
+import Servicios from '@components/Servicios.vue'
+---
+
+<Layout
+  title="Hotel Del Angel - Comodidad y servicio a un click de distancia"
+  descripcion="Ubicados en el corazón de la ciudad rielera de Apizaco, Hotel del Ángel te ofrece confort y relajación. Experimenta el lujo a un solo clic."
+>
+  <section id="inicio">
+    <Hero />
+  </section>
+  <section id="habitaciones">
+    <Habitaciones />
+  </section>
+
+  <section id="servicios" class="secondBGColor">
+    <Servicios client:only />
+  </section>
+
+  
+</Layout>
+  
+

@@ -1,0 +1,31 @@
+{
+    "descripcion": {
+        "doble": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis cum, aliquam provident reiciendis ipsa. Molestiae reprehenderit voluptate magnam porro, ab ex minima alias asperiores, ea odio commodi quod? Asperiores quas laboriosam culpa dolores pariatur aliquid dicta natus modi corporis?",
+        "Jr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis cum, aliquam provident reiciendis ipsa. Molestiae reprehenderit voluptate magnam porro, ab ex minima alias asperiores, ea odio commodi quod? Asperiores quas laboriosam culpa dolores pariatur aliquid dicta natus modi corporis?",
+        "sencilla": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis cum, aliquam provident reiciendis ipsa. Molestiae reprehenderit voluptate magnam porro, ab ex minima alias asperiores, ea odio commodi quod? Asperiores quas laboriosam culpa dolores pariatur aliquid dicta natus modi corporis?"
+    },
+    "imagenes": {
+        "doble": [
+            "../assets/Doble.jpg",
+            "../assets/JrSuite.jpg"
+        ],
+        "Jr": [
+            "../assets/JrSuite.jpg",
+            "../assets/Doble.jpg"
+        ],
+        "sencilla": [
+            "../assets/Sencilla.jpg",
+            "../assets/Doble.jpg"
+        ]
+    },
+    "seccion": {
+        "doble": "habitacionDoble",
+        "Jr": "habitacionJr",
+        "sencilla": "habitacionSencilla"
+    },
+    "titulo": {
+        "doble": "Habitación Doble",
+        "Jr": "Habitación Jr Suite",
+        "sencilla": "Habitación Sencilla"
+    }
+}

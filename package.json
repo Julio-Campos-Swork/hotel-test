@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/vue": "^3.0.0",
+    "@mdi/font": "^7.2.96",
+    "astro": "^3.0.13",
+    "astro-icon": "^0.8.1",
+    "tailwindcss": "^3.3.3",
+    "vue": "^3.3.4"
+  },
+  "name": "hodel-del-angel",
+  "scripts": {
+    "astro": "astro",
+    "build": "astro build ",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "type": "module",
+  "version": "0.0.1"
+}

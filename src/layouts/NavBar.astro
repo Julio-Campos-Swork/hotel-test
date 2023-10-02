@@ -1,0 +1,210 @@
+---
+import { Icon } from 'astro-icon'
+import Logo from "@assets/logo.png?url"
+const Inicio = "/misitio/"
+---
+
+<header id="header" class="principalBGColor m-0 w-full z-10 sticky top-0 ">
+  <nav class="principalBGColor py-4 px-4 flex">
+    <!-- <div class="flex  px-6"> -->
+    <div class="flex flex-grow items-center lg:ml-20">
+      <a href='/' aria-label="Ir al inicio"
+        ><img
+          src={Logo}
+          width="150"
+          alt="Logotipo Hotel del Angel"
+        /></a
+      >
+    </div>
+    <div class="lg:hidden mt-1">
+      <Icon
+        id="menubtn"
+        name="mdi:menu"
+        width="50"
+        color="white"
+        class="cursor-pointer z-10 transition-transform ease-in-out duration-500"
+      />
+    </div>
+    <div
+      id="menu"
+      class="lg:flex flex-grow hidden mr-3 absolute lg:relative lg:top-0 top-12 left-0 principalBGColor w-full lg:w-auto justify-center mt-4"
+    >
+      <div
+        id="menuMovil"
+        class="grid justify-items-end mt-8 lg:mt-2 pr-6 lg:pr-24 mb-4 lg:pt-0 lg:pl-0 lg:flex lg:flex-row absolute principalBGColor w-full lg:justify-end z-10"
+      >
+        <a href="/" aria-label="Ir a inicio" class="navlinks">Inicio</a>
+        <a
+          href="/#habitaciones"
+          aria-label="Ir a las Habitaciones"
+          class="navlinks">Habitaciones</a
+        >
+        <a
+          href="https://bookings.travelclick.com/105841#/guestsandrooms"
+          target="_blank"
+          class="navlinks"
+          aria-label="Visitar pagina para reservar">Reservar</a
+        >
+        <a href="/#servicios" aria-label="Ir a los Servicios" class="navlinks"
+          >Servicios</a
+        >
+        <a href="/contacto" aria-label="Pagina de contacto" class="navlinks"
+          >Contacto</a
+        >
+
+        <!-- script hotel lg -->
+        <div class="relative lg:-top-10 -top-40 lg:right-12  lg:-left-12 -left-96 lg:pl-8 lg:m-0  lg:flex lg:z-10 lg:justify-end">
+          <div id="TA_rated965" class="TA_rated w-1 h-1">
+            <ul id="jrzToQGwV3" class="TA_links Ue3yLy">
+              <li id="npTlDJu" class="64lxHGXc">
+                <a
+                  target="_blank"
+                  href="https://www.tripadvisor.com.mx/Hotel_Review-g3181075-d2249543-Reviews-Hotel_Del_Angel-Apizaco_Central_Mexico_and_Gulf_Coast.html"
+                  ><img
+                    src="https://www.tripadvisor.com.mx/img/cdsi/img2/badges/ollie-11424-2.gif"
+                    alt="TripAdvisor"
+                  /></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- </div> -->
+  </nav>
+</header>
+<header
+  id="headerFixed"
+  class="principalBGColor lg:hidden m-0 hidden fixed top-0 w-full z-10 transition duration-100 ease-in-out opacity-100"
+>
+  <nav class="principalBGColor py-4">
+    <div class="flex px-6">
+      <div class="flex flex-grow items-center lg:ml-20">
+        <a href="/" aria-label="Ir al inicio"
+          ><img
+            src="../assets/logo.png"
+            width="135"
+            alt="Logo Hotel del Angel"
+          /></a
+        >
+      </div>
+      <div class="lg:hidden mt-1">
+        <Icon
+          id="menubtnFixed"
+          name="mdi:menu"
+          width="50"
+          color="white"
+          class="cursor-pointer z-10 transition-transform ease-in-out duration-500"
+        />
+      </div>
+      <div
+        id="menuFixed"
+        class="lg:flex flex-grow hidden mr-3 lg:relative lg:top-0 top-12 left-0 principalBGColor fixed w-full lg:w-auto mt-1 lg:py-0 z-10"
+      >
+        <div
+          id="menuMovilFixed"
+          class="grid justify-items-end mt-8 pr-6 pt-4 lg:pt-0 lg:pl-0 lg:flex lg:flex-row fixed principalBGColor w-full z-10"
+        >
+          <a href="/" aria-label="Ir a inicio" class="navlinks">Inicio</a>
+          <a
+            href="/#habitaciones"
+            aria-label="Ir a las Habitaciones"
+            class="navlinks">Habitaciones</a
+          >
+          <a
+            href="https://bookings.travelclick.com/105841#/guestsandrooms"
+            target="_blank"
+            class="navlinks"
+            aria-label="Visitar pagina de para reservar">Reservar</a
+          >
+          <a href="/#servicios" aria-label="Ir a los Servicios" class="navlinks"
+            >Servicios</a
+          >
+          <a href="/contacto" aria-label="Pagina de contacto" class="navlinks"
+            >Contacto</a
+          >
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<script is:inline>
+  //header
+  document.getElementById('menubtn').addEventListener('click', openMenu)
+  function openMenu() {
+    let menu = document.getElementById('menu')
+    let menuBtn = document.getElementById('menubtn')
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden')
+    } else {
+      menu.classList.add('hidden')
+    }
+
+    if (menuBtn.classList.contains('hover:rotate-90')) {
+      menuBtn.classList.remove('hover:rotate-90')
+    } else {
+      menuBtn.classList.add('hover:rotate-90')
+    }
+    menu.addEventListener('click', closeMenu)
+  }
+  function closeMenu() {
+    let menu = document.getElementById('menu')
+
+    menu.classList.add('hidden')
+    // document.getElementById("menubtn").addEventListener("click", openMenu);
+  }
+
+  //headerfixed
+  document
+    .getElementById('menubtnFixed')
+    .addEventListener('click', openMenuFixed)
+  function openMenuFixed() {
+    let menu = document.getElementById('menuFixed')
+    let menuBtn = document.getElementById('menubtnFixed')
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden')
+    } else {
+      menu.classList.add('hidden')
+    }
+
+    if (menuBtn.classList.contains('hover:rotate-90')) {
+      menuBtn.classList.remove('hover:rotate-90')
+    } else {
+      menuBtn.classList.add('hover:rotate-90')
+    }
+    menu.addEventListener('click', closeMenuFixed)
+  }
+  function closeMenuFixed() {
+    let menu = document.getElementById('menuFixed')
+
+    menu.classList.add('hidden')
+    // document.getElementById("menubtn").addEventListener("click", openMenu);
+  }
+
+  //scroll
+  // document.addEventListener('scroll', handleScroll)
+  // function handleScroll() {
+  //   let header = document.getElementById('header')
+  //   const scrollY = window.scrollY
+  //   const scrollThreshold = 100
+
+  //   if (scrollY > scrollThreshold) {
+  //     header.classList.add('fixed-header')
+  //   } else {
+  //     header.classList.remove('fixed-header')
+  //   }
+  // }
+</script>
+<!-- <script
+  async
+  src="https://www.jscache.com/wejs?wtype=rated&uniq=965&locationId=2249543&lang=es_MX&display_version=2"
+  data-loadtrk
+  onload="this.loadtrk=true"></script> -->
+<style>
+  .navlinks {
+    @apply text-white text-lg hover:text-red-500 transition px-2 duration-300 ease-in-out mb-4 lg:mr-10 lg:mb-0;
+  }
+</style>
