@@ -1,8 +1,8 @@
 <template>
-	<div class="flex justify-center p-2">
+	<div class="flex justify-center p-2" data-aos="fade-up">
 		<div id="carrousel" class="relative w-full lg:w-3/4 max-w-6xl">
 			<p
-				class="text-center text-white text-2xl font-semibold py-2 lg:py-4 lg:pt-16 lg:text-4xl subTitleFont"
+				class="text-center text-white text-2xl font-semibold py-2 lg:pb-8 lg:pt-12 lg:text-4xl subTitleFont"
 			>
 				{{ titleDisplay }}
 			</p>
@@ -22,7 +22,7 @@
 						@click="changeByButton(indexB)"
 						:class="
 							index === indexB
-								? 'bg-green-400  w-3 h-3 lg:w-4 lg:h-4 rounded-full flex flex-col '
+								? 'bg-[#A76BB2]  w-3 h-3 lg:w-4 lg:h-4 rounded-full flex flex-col '
 								: 'w-3 h-3  lg:w-4 lg:h-4 rounded-full bg-white flex flex-col '
 						"
 						v-for="(data, indexB) in storagedData"
@@ -55,7 +55,7 @@
 		</div>
 	</div>
 	<div class="flex justify-center pt-2 pb-8">
-		<a
+		<!-- <a
 			:href="`/servicios/${titleDisplay}`"
 			:aria-label="`Ir al servicio, ${titleDisplay}`"
 		>
@@ -63,16 +63,44 @@
 				Información sobre {{ titleDisplay }}
 				<i class="fa fa-solid fa-arrow-right px-3 pt-1 w-[15px]"></i>
 			</button>
+		</a> -->
+		<a
+			:aria-label="`Ir al servicio, ${titleDisplay}`"
+			:href="`/servicios/${titleDisplay}`"
+			class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium bg-[#A76BB2] text-indigo-600 transition duration-300 ease-out rounded-full shadow-md group"
+		>
+			<span
+				class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#DB87CD] group-hover:translate-x-0 ease"
+			>
+				<svg
+					class="w-7 h-7"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M14 5l7 7m0 0l-7 7m7-7H3"
+					></path>
+				</svg>
+			</span>
+			<span
+				class="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease"
+				>Información sobre {{ titleDisplay }}</span
+			>
+			<span class="relative invisible">Información sobre {{ titleDisplay }}</span>
 		</a>
 	</div>
 </template>
 
 <script setup>
 	import { ref, onBeforeMount } from 'vue'
-	const { data, timeMS, hasManyPhotos } = defineProps({
+	const { data, timeMS } = defineProps({
 		data: Array,
 		timeMS: Number,
-		hasManyPhotos: Boolean,
 	})
 	const titleDisplay = ref('')
 	const storagedData = ref([])
@@ -93,9 +121,7 @@
 
 	//inicio de componente que nos permitirá hacer el sliding (en caso de decir que tiene varias imagenes)
 	setInterval(() => {
-		if (hasManyPhotos) {
-			slider()
-		}
+		slider()
 	}, timeMS)
 
 	const slider = () => {

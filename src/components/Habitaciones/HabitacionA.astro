@@ -1,8 +1,9 @@
 ---
 import Icon from 'astro-icon'
-import ImagenWebp from '@components/ImagenWebp.astro'
-
+import { Image } from 'astro:assets'
 const { title, description, images } = Astro.props
+import Btnreservar from '@components/Btnreservar.astro';
+
 ---
 
 <hr class="border-white" />
@@ -25,37 +26,34 @@ const { title, description, images } = Astro.props
   </div>
   <hr class="border-white" />
 
-  <div
+  <div 
     class="grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-4 p-3 justify-items-center"
   >
     <div
       class="max-w-md max-h-md box transition-transform duration-300 ease-in-out hover:scale-105"
     >
-      <ImagenWebp
-        imageWebp={images[0]}
-        imageJPG={images[0]}
-        imageName={title}
-        clase="h-full w-full"
+      <Image
+        src={images[0]}
+        alt={title}
+        
       />
     </div>
     <div
       class="max-w-md max-h-md box transition-transform duration-300 ease-in-out hover:scale-105"
     >
-      <ImagenWebp
-        imageWebp={images[1]}
-        imageJPG={images[1]}
-        imageName={title}
-        clase="h-full w-full"
+      <Image
+        src={images[1]}
+        alt={title}
+        
       />
     </div>
     <div
       class="max-w-md max-h-md box transition-transform duration-300 ease-in-out hover:scale-105"
     >
-      <ImagenWebp
-        imageWebp=""
-        imageJPG={images[0]}
-        imageName={title}
-        clase="h-full w-full"
+      <Image
+        src={images[0]}
+        alt={title}
+        
       />
     </div>
   </div>
@@ -65,12 +63,8 @@ const { title, description, images } = Astro.props
     <p class="text-center text-white text-xl">{description}</p>
   </div>
   <div class="flex flex-col items-center pb-6">
-    <a
-      href="https://bookings.travelclick.com/105841#/guestsandrooms"
-      target="_blank"
-    >
-      <button class="botonInfo">Reservar</button>
-    </a>
+    <Btnreservar text="Reservar Habitaciones" link="https://bookings.travelclick.com/105841#/guestsandrooms" target="_blank" />
+
   </div>
 </section>
 

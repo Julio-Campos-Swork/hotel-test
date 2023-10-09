@@ -27,23 +27,23 @@ html {
 /* Letras disponibles  */
 @font-face {
     font-family: "Her Von";
-    src: url('HerrVonMuellerhoff-Regular.ttf');
+    src: url('../assets/fuentes/HerrVonMuellerhoff-Regular.ttf');
 }
 @font-face {
     font-family: "Blacklist";
-    src: url('Blacklist.ttf');
+    src: url('../assets/fuentes/Blacklist.ttf');
 }
 @font-face {
     font-family: "Playfair";
-    src: url('PlayfairDisplay-BoldItalic.ttf');
+    src: url('../assets/fuentes/PlayfairDisplay-BoldItalic.ttf');
 }
 @font-face {
     font-family: "Josefin";
-    src: url('JosefinSans-Italic.ttf');
+    src: url('../assets/fuentes/JosefinSans-Italic.ttf');
 }
 @font-face {
     font-family: "Lora";
-    src: url('Lora.ttf');
+    src: url('../assets/fuentes/Lora.ttf');
 }
 .fontTitle{
   font-family: 'Blacklist', sans-serif;

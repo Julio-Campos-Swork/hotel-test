@@ -7,6 +7,5 @@ import vue from '@astrojs/vue'
 export default defineConfig({
   integrations: [tailwind(), vue()],
   server: { host: true },
-  // base: '/misitio/',
-  // site: 'https://itdeveloper.net/misitio/',
+  site: 'https://hoteldelangel.com.mx',
 })

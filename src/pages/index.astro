@@ -3,6 +3,7 @@ import Layout from '@layouts/Layout.astro'
 import Hero from '@components/Hero.astro'
 import Habitaciones from '@components/Habitaciones.astro'
 import Servicios from '@components/Servicios.vue'
+import Maps from '@components/Maps.vue'
 ---
 
 <Layout
@@ -12,12 +13,15 @@ import Servicios from '@components/Servicios.vue'
   <section id="inicio">
     <Hero />
   </section>
-  <section id="habitaciones">
+  <section id="habitaciones" class="principalBGColor" >
     <Habitaciones />
   </section>
 
-  <section id="servicios" class="secondBGColor">
+  <section id="servicios" class="secondBGColor" >
     <Servicios client:only />
+  </section>
+  <section id="interes" class="principalBGColor py-10" >
+    <Maps client:only />
   </section>
 
   

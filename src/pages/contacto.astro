@@ -1,39 +1,41 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import { Image } from 'astro:assets';
+import ContactImage from '@assets/phone/Jardin.jpg'
 ---
 
 <Layout
   title="Contacto - Hotel del Angel"
-  descripcion="Somos una hacienda en el corazón de la ciudad, con un concepto pensado en tu comodidad y relajación. Vive una experiencia de altura a un solo clic"
+  descripcion="Somos una hacienda en el corazon de la ciudad, con un concepto pensado en tu comodidad y relajacion. Vive una experiencia de altura a un solo click"
 >
   <hr class="border-white opacity-70" />
 
   <div class="grid grid-cols-1 lg:grid-cols-2 pb-4 secondBGColor lg:pl-8">
     <div class="flex flex-col p-10">
       <h2
-        class="subTitleFont lg:text-start text-center text-white uppercase pb-10 text-4xl lg:text-6xl font-bold"
+        class="subTitleFont lg:text-start text-center text-white uppercase pb-10 py-2 text-4xl lg:text-6xl font-bold"
       >
         Contacto
       </h2>
-      <p class="text-white text-center lg:text-start text-2xl py-8">
+      <p class="text-white text-center lg:text-start text-lg lg:text-2xl py-8">
         <i class="fa fa-map-marker-alt me-3"></i>C. Jesús Carranza 1909, El
         Carmen, 90338 Apizaco, Tlax.
       </p>
-      <p class="text-white text-center lg:text-start text-2xl py-8">
+      <p class="text-white text-center lg:text-start text-lg lg:text-2xl py-8">
         <i class="fab fa-whatsapp me-3"></i>241-135-4582
       </p>
-      <p class="text-white text-center lg:text-start text-2xl py-8">
+      <p class="text-white text-center lg:text-start text-lg lg:text-2xl py-8">
         <i class="fa fa-phone me-3"></i>800-700-77-82
       </p>
-      <p class="text-white text-center lg:text-start text-2xl py-8">
+      <p class="text-white text-center lg:text-start text-lg lg:text-2xl py-8">
         <i class="fa fa-phone me-3"></i>241-417-68-00
       </p>
-      <p class="text-white text-center lg:text-start text-2xl py-8">
+      <p class="text-white text-center lg:text-start text-lg lg:text-2xl py-8">
         <i class="fa fa-envelope me-3"></i>ventas@hoteldelangel.com.mx
       </p>
     </div>
-    <div class="p-10">
-      <img src="phone/Jardin.jpg" class="w-full h-full box" />
+    <div class="p-10 justify-self-center">
+      <Image src={ContactImage} class="box" width={600} height={600} alt='Hotel del angel' />
     </div>
   </div>
   <hr class="border-white opacity-70" />

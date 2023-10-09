@@ -2,20 +2,39 @@
 import Layout from '@layouts/Layout.astro'
 import ServiciosData from '@data/serviciosData.json'
 import HabitacionA from '@components/Habitaciones/HabitacionA.astro'
-
+import Sencilla from '@assets/Sencilla.jpg'
+import Doble from '@assets/Doble.jpg'
+import JrSuite from '@assets/JrSuite.jpg'
+const images = []
 export async function getStaticPaths() {
-  return ServiciosData.habitaciones.flatMap(({ titulo, descripcion,images}) => {
+  return ServiciosData.habitaciones.flatMap(({ titulo, descripcion}) => {
     return [
       {
         params: { habitacion: titulo },
-        props: { descripcion, images },
+        props: { descripcion },
       },
     ]
   })
 }
 const { habitacion } = Astro.params
-const { descripcion, images } = Astro.props
+const { descripcion } = Astro.props
 const title = habitacion + ' - Servicio proporcionado por el Hotel del Angel'
+const verifyRoom = () => {
+
+  if(habitacion === 'Sencilla'){
+  images.push(Sencilla)
+  images.push(Doble)
+  }
+  if(habitacion === 'Doble'){
+    images.push(Doble)
+    images.push(JrSuite)
+  }
+  if(habitacion === 'JrSuite'){
+  images.push(JrSuite)
+  images.push(Sencilla)
+  }
+}
+verifyRoom()
 ---
 
 <Layout
